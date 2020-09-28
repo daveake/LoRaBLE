@@ -1,20 +1,4 @@
-This is generic firmware to make various devices into HAB LoRa receivers.  Currently hash settings for:
-
-- TTGO T-Beam
-- TTGO LoRa OLED V1
-- TTGO LoRa OLED V2
-- Uputronics LoRaGo
-
-The receiver can be connected to a phone or tablet or PC, using Bluetooth or BLE (Bluetooth Low Power) or USB Serial so in order to view the received telemetry.
-
-I have written several programs suitable for decoding this telemetry, uploading to Habhub/HAB.Link, and providing a UI with mapping etc., e.g.:
-
-- HAB Base
-- HAB Explora
-- HAB PADD
-- HAB LCARS
-
-See my github account and blog for details about this host software for Windows, Mac, Raspberry Pi, iPad, iPhone, Android phone or tablet.
+This is firmware to make a TTGO t-Beam HAB LoRa receiver linked over BLE.  It is my generic firmware but modified to make it easier for an ESP32 client (namely the TTGO T-Watch 2020) to connect over BLE serial.
 
 
 Libraries
@@ -65,7 +49,7 @@ The current commands are:
 	- S<spreading factor from 6 to 11>
 	- I<1=implicit mode, 0=explicit mode>
 	- L(low data rate optimisation: 1=enable, 0=disable)
-	
+
 The supported modes are:
 
 0 = (normal for telemetry)  Explicit mode, Error coding 4:8, Bandwidth 20.8kHz, SF 11, Low data rate optimize on
