@@ -72,6 +72,7 @@
   #define SCK                 5
   #define MISO               19
   #define MOSI               27
+  #define LED                25  // Pin 23 on V2_1.5 or pin 25 on V2_1.6 acording to http://www.lilygo.cn/prod_view.aspx?TypeId=50003&Id=1270&FId=t3:50003:3
 #endif
   
 #ifdef LORAGO
